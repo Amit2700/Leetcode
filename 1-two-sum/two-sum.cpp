@@ -6,6 +6,7 @@ public:
             int rem = target - nums[i] ;
             if(mp.find(rem) != mp.end()){
                 return {i , mp[rem]} ;
+                break ;
             }
             mp[nums[i]] = i ;
         } 
