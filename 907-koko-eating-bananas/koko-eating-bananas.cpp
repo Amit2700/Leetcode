@@ -1,9 +1,9 @@
 class Solution {
 public:
-    long long help(vector<int>& piles, int mid) {
+    long long help(vector<int>& piles, long long mid) {
         long long hours = 0;
         for (int pile : piles) {
-            hours += (pile + (long long)mid - 1) / mid; /* ceil(a / b) = (a + b - 1)/b */
+            hours += (pile + mid - 1) / mid; /* ceil(a / b) = (a + b - 1)/b */
         }
         return hours;
     }
